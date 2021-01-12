@@ -1,6 +1,6 @@
 <section class="banner base" date-background="image/title_background.jpg">
     <h2 style="color:white;"; >
-    Python Code Quality
+    Data Scientist Job Search
     </h2>
     <h2 style="color:white;"; >
     (for data scientists)
@@ -9,898 +9,318 @@
     I-Kang Ding
     </h5>
     <h6 style="color:white;"; >
-    Feb 2020
+    Jan 2021
     </h6>
 </section>
 
 ---
 ### Outline
 
-* <a href="#/introduction">Introduction</a>
-* <a href="#/common-code-smell">Common code smell</a>
-* <a href="#/python-style-guide">Python style guide</a>
-* <a href="#/unit-test">Unit test</a>
-* <a href="#/github-collaboration-workflow">GitHub collaboration workflow</a>
-* <a href="#/code-review">Code review</a>
-* <a href="#/reference">Reference</a>
+* <a href="#/choosing-a-company">Choosing a Company</a>
+* <a href="#/interview-prep">Types of Interviews and Preparation</a>
+* <a href="#/offer-negotiation">Offer Negotiations</a>
 
 ---
-<section id="introduction">
-<h2>Introduction</h2>
+<section id="choosing-a-company">
+<h2>Choosing a Company</h2>
 </section>
 
 ---
 ### `$ whoami`
 
-* Education
-  * B.Sc. Chemistry, National Taiwan University
-  * M.S. / Ph.D. Materials Sci. Eng., Stanford University
-
-* [Career Path](https://ikding.github.io/resume/)
-  * Device engineer at Alta Devices (solar cell startup)
-  * Data scientist at a Lumileds (LED manufacturer)
-  * Data scientist at Capital One (financial services)
-  * Data scientist at KoBold Metals (mineral exploration / climate tech)
-
----
-### What is cod equality?
-
-`assert (pacific_cod == atlantic_cod)`
-
-<img src="image/cod_equality.jpg" height="450px"></img>
+* Background: materials scientist PhD in semiconductors
+* Sr. data scientist at a Lumileds (LED manufacturer)
+  * 5,000 employees, US $1B+ annual revenue
+  * Data analytics and device characterization for R&D and production scales
+* Data science manager at Capital One (financial services)
+  * 50,000 employees, top 10 retail bank in US
+  * Most recent project: developing & deploying machine learning model for fraud defense
+* Sr. data scientist at KoBold Metals (mineral exploration / climate tech)
+  * 25 employees, series A startup
+  * ML & physical models on geospatial data
 
 ---
-### What is ~~cod equality~~ code quality?
+### Choosing a company
 
-<img src="https://imgs.xkcd.com/comics/good_code.png" height="500px"></img>
+Now (2015) is a good time to be a data scientist!
 
-Source: [xkcd](https://xkcd.com/844/)
+* Many company want to expand their data science teams.
+* The profession as a whole is receiving a lot of attention.
+* Wide array of open-source tools to choose from.
 
----
-### What is ~~cod equality~~ code quality?
+The choices of job opportunities can be overwhelming for candidates.
 
-<p style="text-align:left;">"All code bases with good code quality look alike. On the other hand, code bases with bad code quality can be bad for a variety of reasons." - Aristotle, probably </p>
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/1024px-Aristotle_Altemps_Inv8575.jpg" height="400px"></img>
-
-
-### Code quality 1
-
-<img src="https://imgs.xkcd.com/comics/code_quality.png" height="350px"></img>
-
-Source: [xkcd](https://xkcd.com/1513/)
-
-
-### Code quality 2
-
-<img src="https://imgs.xkcd.com/comics/code_quality_2.png" height="500px"></img>
-
-Source: [xkcd](https://xkcd.com/1695/)
-
-
-### Code quality 3
-
-<img src="https://imgs.xkcd.com/comics/code_quality_3.png" height="350px"></img>
-
-Source: [xkcd](https://xkcd.com/1833/)
+* Scale of the company: start-up (early vs. late-stage), established company
+* Industry: tech, social network, retail, e-commerce, financial/banking, healthcare, bio-medicine, insurance, manufacturing, consulting... etc
 
 ---
-### Good code quality
+### Choosing a company as a data scientist
 
-* Are there any obvious logic errors in the code? (**correctness**)
-* Looking at the requirements, are all cases fully implemented? (**functionality**)
-* Does the code include appropriate documentations, and conform to existing style guidelines? (**readability**)
-* Are the code covered by test cases? Do existing tests need to be rewritten to account for changes in code? (**testing**)
-* Can the code quality be further improved with good design practices? (**design**)
-* Is it easy to build on your code and add new functions? Or reuse your code as a module in other programs? (**extensibility**)
-* Can you improve the runtime or disk/memory consumption of your program? (**resource**)
+<div style='text-align: center;'>
+    <img height='450' src='./assets/img/chooseCompanyWisely.jpg' />
+</div>
 
 ---
-### Why should DS care about code quality?
+### Criteria on choosing a company #1
 
-* Code is a form of communicate with machines that does the heavy lifting computation for us.
-* Code is a form of communication between people.
-* Data science projects (analysis, ML models, etc) are often collaborative in nature - you won't be the only person who needs to use or modify your code
+Advice from [Stitch Fix Blog](http://multithreaded.stitchfix.com/blog/2015/03/31/advice-for-data-scientists/):
 
----
-### My journey on code quality
+1. Work for a company that leverages data science for its strategic differentiation:
 
-* 2015: joined Capital One as primarily an R user
-  * Submitted my code challenge in R
-  * Only learned Python during interview prep
-  * Learned more Python (by doing) through internal training programs and projects
-* 2016: got serious about Python code quality
-  * Collaborated with a former software engineer at Google on making an internal Python package
-  * Got my first PR tore apart (constructively) by my teammate
+   Company's core competency depends on its data and analytic capabilities; data science is more than a "supporting role".
 
----
-### My journey on code quality (2)
+2. Work for a company with great data:
 
-* 2017: improve Python code quality and dabble in DevOps
-  * Internal package sees more adoption - need to boost docs (sphinx) and CICD testing (CircleCI)
-  * Performing my own DevOps work through awscli, ansible
-* 2018-2020: apply my own learning to my new role (model developer)
-  * Convert my team's model development code from databricks notebooks into pip-installable package
-  * Adopting best practices such as sphinx docs, unit tests, integration tests, functional tests
-  * Test driven development (TDD) whenever possible
+   There is a difference between "data" and "aspirations of data". Ideally you'll find a company that already has enough data to do interesting things.
+
+3. Work for a company with green field opportunities:
+
+   Look for those companies that have a strong direction and strongly established data science teams, but have an array of problems they are solving for the first time.
 
 ---
-<section id="common-code-smell">
-<h2>Common Code Smell</h2>
-<h3>(and what to do about it)</h3>
+### Criteria on choosing a company #2
+
+On a more personal level, my criteria are fairly simple:
+
+1. I want to care about what the company is doing.
+2. I want to optimize for my own learning opportunities in hands-on data science.
+
+Other considerations: boss/teammates, compensation, work-life balance...
+
+Caveat: "Don't judge a book by its cover".
+
+Be open-minded and throw away preconceived-notion about what you think a company does, or does not, do.
+
+**Action**: think long and hard about what your own set of criteria is.
+
+---
+### But how do you find out?
+
+Good recruiters and hiring managers have vested interest in presenting their best face forward.
+
+<div style='text-align: center;'>
+    <img height='450' src='./assets/img/JediMindTrick.jpg' />
+</div>
+
+---
+### But how do you find out?
+
+Ask people who may have more information. "Trust, but verify."
+
+<div style='text-align: center;'>
+    <img height='450' src='./assets/img/DarthVader.jpg' />
+</div>
+
+---
+### Importance of Network and Connections
+
+Connections in your professional network can help you by:
+
+* Give you a heads-up on hiring situations (current or future): "Our executive team is actively raising money now and had good progress; we will get more headcounts next quarter"
+
+* Give you, within reason, an insider-view on a company that you can't discover on the internet.
+  * Good: "Yeah, our company is in data science consulting, but most of our clients are in the same city, so the travel is not that bad."
+  * Bad: "Yeah, I heard Evil Corp's data engineer recently left, so their data scientist probably have to do both DS and DE's job."
+  * Worse: "Yeah, the company's engineering staff is undergoing exodus. All the job postings on website are from 6 months ago."
+
+* Give you, within reason, suggestions on interview prep.
+
+* Help you evaluate job opportunities and offers
+
+---
+### Useful websites: LinkedIn (Professional Network)
+
+* Immediate connections:
+  * Your current and former colleagues / classmates
+  * Your friends
+
+* Extended connections:
+  * 2nd degree connections on LinkedIn
+
+* Example use: (I found two of my industry jobs this way!)
+  * Look for 2nd degree connections in a company you are interested in
+  * Asking mutual connection for an introduction, then go for informational interviews and (perhaps) job referrals
+
+**Action**: join LinkedIn, build up your network, and establish a presence.
+
+---
+### Useful websites: Indeed (Job Posting Aggregator)
+
+**Example Use**:
+* You can set up the job alerts so that it will be delivered daily to your email. I set up alerts for "Data Scientist" jobs in San Francisco bay area, that would be a pretty wide net in itself.
+* You can also set up company specific alerts such as: “Company:(Capital One) (Data Scientist OR Data Engineer) jobs”
+
+**Action**: set up job alerts for targeted geographies and/or companies
+
+---
+### Useful websites - Glassdoor (Employer Reviews)
+
+* Glassdoor let employees and interviewees publish anonymous reviews or interview experiences of the employers.
+* I use this website when I am doing research on the company that I am interested in, often before the information and on-site interviews.
+
+---
+### Useful websites - Crunchbase (Startup Funding DB)
+
+* Crunchbase has a fairly comprehensive list of start-ups fund-raising.
+* Judging from last funding and employee size, you can gauge the length of the runway.
+* Useful for start ups; not necessarily so for public companies (you can often find more publicly-available information)
+
+<div style='text-align: center;'>
+    <img height='250' src='./assets/img/crunchBaseUber.png' />
+</div>
+
+---
+<section id="interview-prep">
+<h2>Types of Interviews and Preparation</h2>
 </section>
 
 ---
-### Code smell: writing long scripts
+### A Data Scientist's Interview
 
-<img src="image/meme_long_functions.jpg" height="450px"></img>
-
----
-### Code smell: writing long scripts
-
-* Why we've all done it:
-  * Don't want to interrupt the flow
-  * Can't imagine reusing any components in the function
-
-* Why it's bad:
-  * Impossible to test individual pieces of functionality
-  * Hard to read
+"Data science interviews are the worst because data science is interdisciplinary: code for 'you have to know everything about all the disciplines.'  Depending on the company and the team, your interview might look like a software developer’s interview, or it might look a like a statistician's interview, and the bad news is that virtually none of the material overlaps." -- [Erin Shellman](http://www.erinshellman.com/crushed-it-landing-a-data-science-job/)
 
 ---
-### What you should do instead
+### Data Scientist - Skills Required
 
-* Modularize based on individual units of functionality, with an eye toward separating at "logic break points" (e.g. data acquisition -> data loading -> business logic)
-* Use standard data structures at interfaces
+* Stats / Probability
+* Modeling / Machine Learning
+* Data Visualization / Web Dev
+* Data Engineering / System Architecture
+* Software Engineering
+* Domain Knowledge (aka. Subject Matter Expertise)
+* Business Acumen and Communication
 
----
-### Code smell: copypasta hell
-
-<img src="image/meme_copy_paste.jpg" height="450px"></img>
-
----
-### Code smell: copypasta hell
-
-`cmd-c, cmd-v`
-
-```python
-import pandas as pd
-
-df = pd.read_csv('../data/file.csv')
-df_ny = df[df.state == 'NY']
-df_va = df[df.state == 'VA']
-df_il = df[df.state == 'IL']
-# [... copy one line for each state]
-```
+**Action:** Know your skill profile, your interest, and know what the company is looking for during earlier rounds of interviews. If you found yourself lacking on aspects that the company absolutely need, it's not a good fit.
 
 ---
-### Code smell: copypasta hell
+### Data Scientist - Skills Required
 
-* Why we've all done it:
-  * Quick and easy
-  * Copy from another script
-  * Making variations on a theme
+Do you excel at all aspects? Congratulations! You are a mythical creature!
 
-* Why it's bad:
-  * Hard to maintain and/or modify
-  * Easy for code blocks to get out of sync
+<div style='text-align: center;'>
+    <img height='350' src='./assets/img/RaptorOnShark.jpg' />
+</div>
 
----
-### What you should do instead
+Reality:
 
-* First time you want to copy, wince and do it. The second time, refactor.
-* For common tasks (e.g. run SQL query, copy data from local to S3 buckets, etc), look for solutions that already exist.
+You don't need a single individual to do all the jobs, but you need to build a team that hopefully will cover all aspects.
 
 ---
-### Code smell: hard-coding file paths
+### Types of Interviews
 
-```python
-df = pd.read_csv('/Users/eid123/some/path/on/your/machine/very_cool_data.csv')
-# [all the 300 lines of code for analyzing this very cool data]
-# How do I know it's very cool?
-# It said so in the filename, duh
-```
-
----
-### Code smell: hard-coding file paths
-
-* Why we've all done it:
-  * Quick and easy
-  * Robustly figuring out path is a pain
-
-* Why it's bad:
-  * Hard to maintain
-  * "Oh, to make the code run, you have to set your folder structure this way... What? you are using a Windows machine?"
+* Coding Challenge
+* Data Analysis Challenge
+* Technical Interview (Phone or On-site)
+* Business Interview
+* Behavioral Interview
 
 ---
-### What you should do instead
+### Coding Challenge
 
-* Put things like file names in a configuration module
-* Use `os.path` or `pathlib` to determine absolute paths (bonus: this also takes care of platform interoperability)
+You are expected to solve some computation or data manipulation problem, using a language of your choice. Ideally, your solution not only have to be correct, but also have to scale well. If you can solve a problem in $O(n)$ time, don’t solve it in $O(n^2)$.
 
-```python
-"""config.py"""
-import os
-
-# Get application directory
-APPDIR = os.path.dirname(os.path.realpath(__file__))
-# Get parent directory
-ROOTDIR = os.path.abspath(os.path.join(APPDIR, os.pardir))
-# Get data directory
-DATADIR = os.path.abspath(os.path.join(ROOTDIR, 'data'))
-# Get data file
-DATAFILE = os.path.abspath(os.path.join(DATADIR, 'file.csv'))
-```
+**Action:** play with [HackerRank](http://www.hackerrank.com) or [leetcode](http://www.leetcode.com). But don't go overboard! Data Scientist's algorithm interview is often not as hard-core as that of a software engineer. (but YMMV - your mileage might vary)
 
 ---
-### Code smell: using magic numbers
+### Data Analysis Challenge
 
-<p style="text-align:left;">Magic numbers: unique values with unexplained meaning or multiple occurrences which could (preferably) be replaced with named constants </p>
+* Test your skills on data manipulation, cleaning, and predictive modeling. The questions often contain both descriptive and predictive components.
+  * Descriptive: What is the average amount of time a bike spends at a station?
+  * Predictive: predict # of bikes arriving at each station during a specific time span.
 
-```python
-import pandas as pd
+* Things to know:
+  * You often can stick with simpler models (eg. linear or logistic regression), but be prepared to rationalize the choices you made on model selection.
+  * Your goal was not only on the data munging and modeling, but also provide a written document to explain, in laymen’s terms, what you have found. - Data scientists often have to communicate the results with other non-technical audiences.
+  * You must be able to analyze data with code (eg. R/Rmarkdown, python / ipython notebook).
 
-df = pd.read_csv('../data/file.csv')
-df_ny = df.iloc[:3]
-df_va = df.iloc[3:6]
-df_il = df.iloc[6:9]
-```
-
----
-### Code smell: using magic numbers
-
-<img src="image/meme_magic_numbers.jpg" height="500px"></img>
+**Action:** Play with [kaggle Titanic challenge](https://www.kaggle.com/c/titanic) to understand the type of questions that may be asked in a data analysis challenge.
 
 ---
-### Code smell: using magic numbers
+### Technical Interview (Phone or On-site)
 
-* Why we've all done it:
-  * Originally taught to program using arrays
-  * Coding dynamic lookups is slower and more difficult than referencing index number
+* The questions ranges widely depending on the interviewer, the company, and the position you are applying to. Understand your audience and get an idea of what they are looking for.
 
-* Why it's bad:
-  * Impossible to read and verify
-  * Reference indices can (and do!) change
+* No matter what the questions are asked, it is important to make the interview "interactive". You are talking with a live human being, so most of the time, you not only have to solve the problems correctly, but also have to "think out loud" so that the interviewer can follow your line of thought. This is the conversational version of "show your work".
+
+**Action:** conduct mock-up interviews with your friends and colleagues. Know your audience and understand what the company is looking for; but also accept the fact that you probably won't expect any of the questions.
 
 ---
-### Code smell: using magic numbers
+### Business Case Interviews
 
-"I'll just reuse my old script to load the new data for this month"
+* Only some companies have this. You should only prepare for it if you are pretty certain that this will be included in the interview.
 
-<iframe src="https://giphy.com/embed/nLhdSinRtaL2E" width="470" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+* The questions ranges from more number-specific (break-even analysis: given the following assumptions on fixed and variable costs, how many units of product do you need to sell to break even?) to more open ended questions that involved a lot of back‐and-forth discussions with the interviewers (example: imagine that you have access to half of the US credit card transaction data. How do you use this data to consult your client, a big cafe chain, on which city in US to open their new branches?)
 
----
-### What you should do instead
-
-* Use data structures that support string labels (e.g. `pd.DataFrame`)
-* For constants that you want to reuse, replace magic numbers with named constants or function arg
-
-```python
-def calculate_speed_with_gravity(sec):
-    """Calculate the speed of object after ``sec`` seconds"""
-    return sec * 9.81
-```
-
-```python
-def calculate_speed_with_gravity_func_arg(sec, gravity_acceleration=9.81):
-    """Calculate the speed of object after ``sec`` seconds"""
-    return sec * gravity_acceleration
-```
-
-```python
-GRAVITY_ACCELERATION = 9.81
-
-def calculate_speed_with_gravity_named_const(sec):
-    """Calculate the speed of object after ``sec`` seconds"""
-    return sec * GRAVITY_ACCELERATION
-```
+Action: checkout [case interview tutorials](http://www.capitalone.com/careers/analyst/assessment/) available on line, which gives you a flavor of the questions that may be involved.
 
 ---
-### Code smell: no comments or docstrings
+### Behavioral Interview:
 
-<p style="text-align:left;">"Documentation? No, just read the code... it's all pretty straightforward."</p>
+* The behavioral questions are asked to figure out if you work will with others, how you handle conflicts, etc. Employers wants to know you behaved in the past in order to predict your future with them.
 
-<iframe src="https://giphy.com/embed/Myd5rnSXpvpL2" width="480" height="288" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+* When you answer this kind of question, it is important to think of examples that back up your answer. Saying "I work well with others"" is one thing; saying "in my last project I worked with three different research groups to bring the project to completion" is much better.
 
-Source: [twitter](https://twitter.com/jakevdp/status/847859811823767552)
+* One popular approach to is to use the STAR (Situation / Task / Action / Result) format. There are a wide array of internet resources available on this topic.
 
----
-### Code smell: no comments or docstrings
-
-* Why we've all done it:
-  * Code functionality is very clear*
-    * Only clear to the person who wrote it
-    * Only clear at time of writing
-  * "Why would I spend time writing docstrings? Nobody else is going to use this"
-
-* Why it's bad:
-  * **You** will need to use this
+**Action:** google "behavioral interview" and understand the STAR format. Think about your past experiences and come up with answers for some popular questions (teamwork, conflict resolution, biggest strengths and weaknesses, etc.)
 
 ---
-### What you should do instead
+### Your question for them:
 
-* Docstring always
-* Comment in-line liberally
-* Bonus: make html-formatted docs with tools like [sphinx](http://www.sphinx-doc.org/en/master/)
+* A job interview is a two-way process in which two parties (you and your potential employer) decide if they want to "go steady". Once you take their job offer you may spend months to years with them, so this is not a decision to be taken lightly.
 
----
-### Code smell: lazy exception handling
+* Make sure you have done some research on the company (and the interviewers if you have time) before your on‐site interview, so that the Q&A time can be spent on things that aren't public knowledge.
 
-```python
-try:
-    important_function_that_should_work()
-except:
-    pass  # YOLO, LOL
-```
+* Well-thought and well-prepared questions for them will:
+  * shows them that you are genuinely interested in the job and the company (and have done your homework before the interview)
+  * provide you the best chance to collect information to make an informed decision.
+
+* Having no questions at all does NOT show well - you will be passed as not-prepared, not-interested, or both.
 
 ---
-### Code smell: lazy exception handling
+### Your question for them:
 
-* Why we've all done it:
-  * Can't think of other things that could go wrong
-  * Too lazy to look up proper exception codes
+Example questions:
 
-* Why it's bad:
-  * We are willing to catch *any* error, although we are not prepared for it **and** we also don't do anything about it
-  * This **will** make your code break silently and in a completely unpredictable way that no one can debug
-  * More details in this SO answer: [Why is `except: pass` a bad programming practice?](https://stackoverflow.com/a/21553825)
-
----
-### What you should do instead
-
-* Catch only exceptions you really expect and are prepared to recover from (and clearly state it in docstrings)
-* All other exceptions are likely either mistakes you should fix, or something you are not prepared for anyway (and should not catch)
-
-```python
-import sys
-
-try:
-    f = open('myfile.txt')
-    s = f.readline()
-    i = int(s.strip())
-except OSError as err:
-    print("OS error: {0}".format(err))
-except ValueError:
-    print("Could not convert data to an integer.")
-except:
-    print("Unexpected error:", sys.exc_info()[0])
-    raise
-```
+1. What would be my main responsibility if I am hired? What are some of the example projects I may be working on?
+2. What is your day to day like?
+3. What are the personal attributes that set a successful employee apart from others?
+4. What does a successful first‐year look like for new hire in this position?
+5. How did you start in this company / why did you decide to work here?
+6. Things that you like the most and the least about working at this company?
+7. When can I expect to hear from you after this interview? – ask either the hiring manager or the HR this question to have a better sense about the timeline they make hiring decisions.
 
 ---
-### Code smell: Do everything in notebooks
-
-* Notebooks are typically web applications that marries code, graphics, markdown text, and more, in an bid to create "literate programming" environment.
-* Examples include: Jupyter (Python), Databricks (Spark), R Markdown / knitr (R)
-
----
-### Code smell: Do everything in notebooks
-
-<img src="image/meme_notebook_argument_horizontal.jpeg" height="600px"></img>
-
----
-### "Let's collaborate on a code base in notebooks!"
-
-<img src="image/meme_notebook_merge_conflicts.png" height="450px"></img>
-
----
-### What notebooks are good for
-
-* Great for exploratory work or just "playing around"
-* Fantastic for making it easy to publish final result with co-located code, plots, and write-ups
-* Useful for tutorials-type environments
-
----
-### What notebooks are *not* good for
-
-* Get in the way of learning solid programming skills and encourage bad coding practices
-  * Hard to modularize and test components
-  * Does not play well with tools for code quality checks and unit test suites
-* Get in the way of reproducibility
-  * Very easy for cells to be run out of order
-  * ... and no ways for others verify
-* Make collaboration much harder
-  * Jupyter notebook (`.ipynb`) are a mish-mash of json, html, python, and markdown (and potentially more)
-  * GitHub merge conflicts can be full of pain and suffering
-
----
-### What you should do instead
-
-* Only use notebooks for what they are good for
-* The moment that you realized your notebook may be reused by others, or morph into a more persistent, long-term project - refactor code into a a proper Python script (or package)!
-
----
-<section id="python-style-guide">
-<h2>Python style guidelines</h2>
+<section id="offer-negotiation">
+<h2>Offer Negotiations</h2>
 </section>
 
 ---
-### Code style guidelines
+### Salary Negotiation
 
-* If code standards are the wheels of collaboration, style standards are the grease.
-* You should know the style guidelines for your primary programming language, but having a single, agreed-upon standard is more important than knowing specific guidelines.
+Highly recommended read, especially if you think there will be offers coming: ["Negotiating Your Salary: How To Make $1000 a Minute" (Chapman)](http://www.amazon.com/Negotiating-Your-Salary-Minute-Revised/dp/1580083102)
 
----
-### PEP8
+Older version in electronic format can be found online.
 
-* PEP = Python enhancement proposal
-* [PEP8](https://www.python.org/dev/peps/pep-0008/) is one of the wildly used style guide for Python code
-* It is well-supported by many code linters
-
-<img src="https://files.realpython.com/media/PEP-8-Tutorial-Python-Code-Formatting-Guide_Watermarked.9103cf7be328.jpg" height="350px"></img>
+<div style='text-align: center;'>
+    <img height='300' src='./assets/img/NegotiatingYourSalary.jpg' />
+</div>
 
 ---
-### Google Python style guide
+### Salary Negotiation
 
-* [Google Python style guide](http://google.github.io/styleguide/pyguide.html) is superset of PEP8, with its own idiosyncrasies
+Salary making rule:
 
----
-### Naming conventions
+1. Postpone salary talk until there's an offer
+2. Don't do salary negotiation over the email - phone or in-person preferred
+3. Know your market value, your own range, and your BATNA (Best Alternative to a Negotiated Agreement).
+   * Ideal
+   * Satisfactory
+   * No-go
 
-| Type                        | Public                      | Internal              |
-|-----------------------------|-----------------------------|-----------------------|
-| Files                       | `lower_with_under.py`       |                       |
-| Package                     | `lower_with_under`          |                       |
-| Modules                     | `lower_with_under`          | `_lower_with_under`   |
-| Classes                     | `CapWords`                  | `_CapWords`           |
-| Exceptions                  | `CapWords`                  |                       |
-| Functions                   | `lower_with_under()`        | `_lower_with_under()` |
-| Global / Class Constants    | `CAPS_WITH_UNDER`           | `_CAPS_WITH_UNDER`    |
+Read the Chapman book for details!
 
 ---
-### Naming conventions
+### Questions?
 
-| Type                        | Public                      | Internal              |
-|-----------------------------|-----------------------------|-----------------------|
-| Global / Class Variables    | `lower_with_under`          | `_lower_with_under`   |
-| Methods                     | `lower_with_under()`        | `lower_with_under()`  |
-| Function / Method Parameters| `lower_with_under`          |                       |
-| Local Variables             | `lower_with_under`          |                       |
-
----
-### How to choose names
-
-<img src="https://imgs.xkcd.com/comics/permanence.png" height="450px"></img>
-
-Source: [xkcd](https://xkcd.com/910/)
-
----
-### How to choose names
-
-* Variables are adjective nouns (`merchant_record`)
-* Function are verbs followed by nouns (`get_merchant_record()`)
-* Booleans are questions (`is_valid_record`)
-* Iterables are pluralized (`for state_name in state_names`)
-
-<p style="text-align:left;">(Personal preference, not specified by PEP8)</p>
-
----
-### Choose descriptive names
-
-<p style="text-align:left;">Names should be as long as they need to be specific and descriptive.</p>
-
-```python
-# Not recommended
->>> x = 'John Smith'
->>> y, z = x.split()
->>> print(z, y, sep=', ')
-'Smith, John'
-```
-
-```python
->>> # Recommended
->>> name = 'John Smith'
->>> first_name, last_name = name.split()
->>> print(last_name, first_name, sep=', ')
-'Smith, John'
-```
-
----
-### Use abbreviations at your peril
-
-```python
-# Not recommended
-# What's db? Double? Database? Decibel?
-def db(x):
-    return x * 2
-```
-
-```python
-# Recommended
-def multiply_by_two(x):
-    return x * 2
-```
-
----
-### White spaces
-
-<iframe src="https://giphy.com/embed/l0IylSajlbPRFxH8Y" width="480" height="268" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-
----
-### White spaces
-
-* Do not mix tab and spaces (seriously, there is a `TabError` error type in Python 3 specifically for this)
-* Use 4 consecutive spaces per indentation level
-* Set your editor to automatically convert tab to 4 spaces
-* Set your editor to automatically remove trailing whitespaces
-
----
-#### No white spaces inside parentheses, brackets or braces
-
-```python
-# Good
-spam(ham[1], {eggs: 2}, [])
-```
-
-```python
-# Bad
-spam( ham[ 1 ], { eggs: 2 }, [ ] )
-```
-
----
-#### Surround binary operators with single space on either side for assignment, comparisons, and booleans
-
-```python
-# Good
-x == 1
-```
-
-```python
-# Bad
-x==1
-```
-
----
-#### Do not use spaces around `=` when passing keyword arguments or defining a default parameter value
-
-```python
-# Good
-def complex(real, imag=0.0):
-    return Magic(r=real, i=imag)
-```
-
-```python
-# Bad
-def complex(real, imag = 0.0):
-    return Magic(r = real, i = imag)
-```
-
----
-### Blank lines
-
-* Two blank lines between top level definitions (be they function or class definitions)
-* One blank line between method definitions
-* Single blank lines as appropriate within functions or methods
-
----
-### Docstrings
-
-* A docstring is a string that is the first statement in a package, module, class or function.
-* Always use the three double-quote (`"""`) format for docstrings ([PEP-257](https://www.python.org/dev/peps/pep-0257/))
-* A docstring should be organized as a summary line, followed by a blank line, followed by the rest of the docstring starting at the same cursor position as the first quote of the first line.
-* There are a few docstring conventions that are quite popular, such as [Numpy Style](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html#example-numpy) or [Google Style](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html#example-google).
-* Be consistent!
-
----
-### [Google style docstring](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html#example-google)
-
-```python
-def func(arg1, arg2):
-    """Summary line.
-
-    Extended description of function.
-
-    Args:
-        arg1 (int): Description of arg1
-        arg2 (str): Description of arg2
-
-    Returns:
-        bool: Description of return value
-
-    """
-    return True
-```
-
----
-### [NumPy style docstring](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html#example-numpy)
-
-```python
-def func(arg1, arg2):
-    """Summary line.
-
-    Extended description of function.
-
-    Parameters
-    ----------
-    arg1 : int
-        Description of arg1
-    arg2 : str
-        Description of arg2
-
-    Returns
-    -------
-    bool
-        Description of return value
-
-    """
-    return True
-```
-
----
-### Inline comments
-
-* Inline comments are useful in tricky parts of the code.
-* If you're going to have to explain it in a code review, you should comment it now.
-* Complicated operations get a few lines of comments before the operations commence.
-* Non-obvious ones get comments at the end of the line (two spaces between code and start of comment character, `#`)
-
-```python
-# We use a weighted dictionary search to find out where i is in
-# the array.  We extrapolate position based on the largest num
-# in the array and the array size and then do binary search to
-# get the exact number.
-
-if i & (i-1) == 0:  # True if i is 0 or a power of 2.
-```
-
----
-### Tools for code style guides: Linters
-
-* Linters are programs that analyze code and flag errors. They provide suggestions on how to fix the error.
-* Linters are particularly useful when installed as extensions to your text editor, as they flag errors and stylistic problems while you write.
-* Tools: [`pylint`](https://pypi.org/project/pylint/), [`pycodestyle`](https://pypi.org/project/pycodestyle/), [`flake8`](https://pypi.org/project/flake8/), etc
-
----
-### Tools for code style guides: Autoformatters
-
-* Autoformatters are programs that refactor your code to conform with PEP 8 automatically.
-* If you and your collaborators can agree on using the same autoformatter, it can make code review a lot easier
-* Tools: [`black`](https://pypi.org/project/black/), [`autopep8`](https://pypi.org/project/autopep8/0.8/), [`yapf`](https://pypi.org/project/yapf/), etc.
-* You can try them on an existing code base and which one you like the best!
-
----
-<section id="unit-test">
-<h2>Unit Tests</h2>
-</section>
-
----
-### Problem: "such software, much code"
-
-* How do you know your shiny new function is working?
-* How do you know the refactoring you worked on didn't break anything?
-* How do you know your environment didn't change overnight and break your script?
-
-<img src="image/meme_doge_software.jpg" height="350px"></img>
-
----
-### What are unit tests?
-
-* A test is an extra piece of code to verify the correctness of the code we actually care about
-* Unit tests can be designed to check for expected behavior under a variety of test cases
-* You can run the tests every time the code changes, to make sure that the whole system still functions as expected
-
----
-### Benefits of unit testing
-
-* Verify present-day correctness
-* Establish interfaces & communicate with colleagues (PR reviewers)
-* Enable refactoring & reduce maintenance burden
-* Guard against complex interactions between other functions
-* Force good design
-
-Reference: [Write tests](http://matthewrocklin.com/blog/work/2016/02/08/tests) - Matthew Rocklin
-
----
-### Unit test example
-
-```python
-# content of test_sample.py
-import pytest
-
-def add_by_one(x):
-    return x + 1
-
-def test_add_by_one():
-    assert add_by_one(3) == 4
-
-def test_add_by_one_type_error():
-    with pytest.raises(TypeError):
-        add_by_one('some_string')
-```
-
-```
-$ pytest pytest_example.py
-================================== test session starts ==================================
-pytest_example.py ..                                                              [100%]
-
-=============================== 2 passed in 0.05 seconds ================================
-```
-
----
-### Unit testing tooling
-
-* [`unittest`](https://docs.python.org/3/library/unittest.html): built-in in Python standard library; inspired by JUnit (JAVA)
-* [`pytest`](https://docs.pytest.org/en/latest/): another unit testing framework; less verbose in its implementation
-* [`doctest`](https://docs.python.org/3/library/doctest.html): allow you to include examples of usage and unit tests right within documentation
-* [`coverage`](https://coverage.readthedocs.io/en/latest/): measuring test coverage of Python code. It can show which parts of your code are being exercised by tests, and which are not.
-* Goal:
-  * The important thing is to pick a framework (`unittest` or `pytest`) and start writing unit tests!
-  * `doctest` and `coverage` are icing on the cake.
-
----
-### Other kinds of tests
-
-* Unit tests: individual functions / classes
-* Integration tests: interface with other systems: database, HDFS, S3 buckets, H2O cluster, etc
-* Functional tests: end-to-end of entire pipelines
-* Golden master tests: outputs generated by a realistic "golden input" do not change as software is updated
-
----
-<section id="github-collaboration-workflow">
-<h2>GitHub collaboration workflows</h2>
-</section>
-
----
-### What is GitHub?
-
-* Version control your code
-* Share code and collaborate with others through [code review](https://github.com/features/code-review/)
-* "If I ask someone 'where is your code?', and it's not in GitHub yet, then I start to worry about what else might be wrong."
-
----
-### GitHub isn't just for code!
-
-* [GitHub pages](https://pages.github.com/): a light-weight web hosting platform
-* [GitHub issues](https://help.github.com/en/github/managing-your-work-on-github/creating-an-issue): keep track of bugs, enhancements, or other request. Also functions as light-weight [project management tool](https://github.com/features/project-management/)
-* [GitHub gist](https://help.github.com/en/github/writing-on-github/creating-gists): instantly share code, notes, and snippets
-* Presentations: This slide deck is made with [`reveal.js`](https://revealjs.com) and hosted on GitHub
-
----
-### Why share your code on GitHub?
-
-* Version control
-* Force you to write better code
-* Enables collaboration
-  * "Interesting and unpublished" is equivalent to "non-existent." - George Whitesides on [Writing a paper](https://onlinelibrary.wiley.com/doi/abs/10.1002/adma.200400767)
-  * Same principle applies to code!
-  * "If you don't share, you're basically useless to everyone else"
-
----
-### Common pushbacks
-
-* "I don't write code"
-* "I don't know how to use GitHub"
-* "I haven't committed my code to GitHub because it's not ready"
-  * If you hear this, there is a high likelihood that the code will never be ready
-
-<p style="text-align:left;">"GitHub is where you put code on to get it done, not where you put code on once it's done."</p>
-
----
-### GitHub collaborative workflows
-
-Source: [Atlassian - Comparing Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows)
-
-* Centralized workflow
-* Feature branch workflow
-* Gitflow workflow
-* Forking workflow
-
----
-### [Centralized workflow](https://www.atlassian.com/git/tutorials/comparing-workflows#centralized-workflow)
-
-* Summary:
-  * The default (main) branch is called `master`
-  * All commits are made to `master`
-  * Merge conflicts needs to be resolved often using `git rebase`
-* Great for small teams (or a "long-wolf" programmer)
-* The conflict resolution process can form a bottleneck as your team scales in size.
-
----
-### [Feature branch workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)
-
-* Summary:
-  * The default (main) branch is called `master`
-  * Developers create `feature` branches where changes are made and tested
-  * `feature` are merged back into `master` via PR's which initiate code reviews and discussions
-* Organize and track branches that are focused on business domain feature sets
-* Promotes collaboration with team members through pull requests and merge reviews
-
----
-### [Gitflow workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
-
-* Similar to feature branch workflow. Great for a release-based software workflow.
-  * The `master` branch serves as the official releases of your project
-  * The `develop` branch serves as an integration branch for features
-  * Developers create `feature` branch where changes are made and tested
-  * `feature` are merged back into `develop` via PR's which initiate code reviews and discussions
-  * Once enough `features` have accumulated or time has passed for a new release, a `release` branch is created from `develop`
-  * `hotfix` branch are created from `master` when production releases needs to be quickly patched
-
----
-### Gitflow schematics
-
-<img src="https://nvie.com/img/git-model@2x.png" height="600px"></img>
-
----
-### [Forking Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow)
-
-* Summary:
-  * Instead of committing directly to the main repo, you fork the code base to your own personal repo.
-  * You can combine this with any of the above workflows. The only difference is your PR would come from your "fork", rather than another branch within the main repo.
-* Contributions can be integrated without the need for everybody to push to a single central repository
-* Provides a flexible way for large, organic teams (including untrusted third-parties) to collaborate securely
-* An ideal workflow for open source projects
-
----
-<section id="code-review">
-<h2>Code Review</h2>
-</section>
-
----
-### Why code reviews?
-
-* Code review is crucial to improve and maintain code quality
-* Testing itself is necessary but not sufficient - someone needs to check the coverage and logic of tests
-* Code review help catch more bugs, make code easier to maintain, and encourage knowledge sharing
-
-<img src="https://imgs.xkcd.com/comics/code_quality_3.png" height="350px"></img>
-
----
-### Code review scope
-
-* Are there any obvious logic errors in the code? (**correctness**)
-* Looking at the requirements, are all cases fully implemented? (**functionality**)
-* Does the code include appropriate documentations, and conform to existing style guidelines? (**readability**)
-* Are the code covered by test cases? Do existing tests need to be rewritten to account for changes in code? (**testing**)
-* **Note**: code reviews normally do not cover sutability of the system architecture designs. Such discussions should ideally happen before any code is written.
-
----
-### Code review: PR authors
-
-* Spend some time to get familiar with Python style guide
-* Read through your own PR before submitting a PR, and make fixes to the rules in the style guide
-* Make sure all unit tests passes (bonus: set up CICD pipelines)
-* Aim for bite-sized PRs, not epic, full-novel-length ones
-* Clearly describe the work in PR (link relevant issues if needed)
-* Tag the primary reviewer in the PR so he/she gets an email notification
-* Tag multiple reviewers as necessary (or available)
-
----
-### Code review: PR reviewers
-
-* Check correctness, functionality, testing coverage, style guide rules, and readability, then offer constructive feedback
-* Cite rules and explain your reasoning behind each recommendation
-* You shouldn't rush through a code review, but you should do it promptly
-* GitHub allow you to register your final judgement
-  * Yes? Ship it
-  * No? Fix it
-
----
-### PR reviewers should be considerate
-
-* Code reviews are essentially critiques - be considerate, and recognize the potential emotional responses of the author
-* PR review should result in better quality code, and better programmers
-* PR review should not result in bruised egos, lower morales, and increased attrition
-
-<img src="image/meme_bad_code.jpg" height="300px"></img>
-
----
-### Code reviewer principles
-
-* Always find something to praise
-* Ask, don't judge
-* Speak in "I would" terms, not "you should"
-* Don't criticize someone for asking a question
-* Focus on the solution, not the problem
-* Remind people that it's about the work, not the person
-
----
-<section id="reference">
-<h2>Reference</h2>
-</section>
-
----
-* [Best practices for scientific computing](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745)
-* [Google Python style guide](http://google.github.io/styleguide/pyguide.html)
-* [The different types of software testing](https://www.atlassian.com/continuous-delivery/software-testing/types-of-software-testing) - Atlassian
-* [Write tests](http://matthewrocklin.com/blog/work/2016/02/08/tests) - Matthew Rocklin
-* ... and lots of discussions with my colleagues at Capital One!
+Slide is available at: http://ikding.github.io/data_sci_job_search/
