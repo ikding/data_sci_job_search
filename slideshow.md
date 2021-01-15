@@ -1,173 +1,210 @@
 <section class="banner base" date-background="image/title_background.jpg">
-    <h2 style="color:white;"; >
-    Data Scientist Job Search
-    </h2>
-    <h2 style="color:white;"; >
-    (for data scientists)
-    </h2>
-    <h5 style="color:white;"; >
+    <h1 style="color:white;"; >
+    Data Scientist Job Search (in USA)
+    </h1>
+    <h3 style="color:white;"; >
     I-Kang Ding
-    </h5>
-    <h6 style="color:white;"; >
+    </h3>
+    <h3 style="color:white;"; >
     Jan 2021
-    </h6>
+    </h3>
+    <!-- <h5 style="color:white; text-align:right;"; > -->
+    https://ikding.github.io/data_sci_job_search/
+    <!-- </h5> -->
+
 </section>
 
 ---
 ### Outline
 
+* <a href="#/data-science-in-industry">Data Science in Industry</a>
 * <a href="#/choosing-a-company">Choosing a Company</a>
 * <a href="#/interview-prep">Types of Interviews and Preparation</a>
 * <a href="#/offer-negotiation">Offer Negotiations</a>
 
 ---
-<section id="choosing-a-company">
-<h2>Choosing a Company</h2>
+### `$ whoami`
+
+* Education
+  * B.Sc. Chemistry, National Taiwan University
+  * M.S. / Ph.D. Materials Sci. Eng., Stanford University
+
+* [Career Path](https://ikding.github.io/resume/)
+  * Sr. Engineer at Alta Devices (solar cell startup)
+  * Sr. Data Scientist at a Lumileds (LED manufacturer)
+  * Data Science Manager at Capital One (financial services)
+  * Sr. Data Scientist at KoBold Metals (mineral exploration / climate tech)
+
+---
+<section id="data-science-in-industry">
+<h2>Data Science in Industry</h2>
 </section>
 
 ---
-### `$ whoami`
+### Venn Diagram of Data Science - 1
 
-* Background: materials scientist PhD in semiconductors
-* Sr. data scientist at a Lumileds (LED manufacturer)
-  * 5,000 employees, US $1B+ annual revenue
-  * Data analytics and device characterization for R&D and production scales
-* Data science manager at Capital One (financial services)
-  * 50,000 employees, top 10 retail bank in US
-  * Most recent project: developing & deploying machine learning model for fraud defense
-* Sr. data scientist at KoBold Metals (mineral exploration / climate tech)
-  * 25 employees, series A startup
-  * ML & physical models on geospatial data
+<img class="r-stretch" src="https://user-images.githubusercontent.com/7269845/104556436-764bea80-55f4-11eb-9e49-100b61f4ed28.png"></img>
 
 ---
-### Choosing a company
+### Venn Diagram of Data Science - 2
 
-Now (2015) is a good time to be a data scientist!
-
-* Many company want to expand their data science teams.
-* The profession as a whole is receiving a lot of attention.
-* Wide array of open-source tools to choose from.
-
-The choices of job opportunities can be overwhelming for candidates.
-
-* Scale of the company: start-up (early vs. late-stage), established company
-* Industry: tech, social network, retail, e-commerce, financial/banking, healthcare, bio-medicine, insurance, manufacturing, consulting... etc
+<img class="r-stretch" src="https://user-images.githubusercontent.com/7269845/104556813-10ac2e00-55f5-11eb-941c-d68d437c838d.png"></img>
 
 ---
-### Choosing a company as a data scientist
+### "Data Science" means different things to different companies!
 
-<div style='text-align: center;'>
-    <img height='450' src='./assets/img/chooseCompanyWisely.jpg' />
-</div>
+<img src="https://user-images.githubusercontent.com/7269845/104556463-8237ac80-55f4-11eb-9abe-68ef4a2f7330.jpg" height="500px"></img>
 
 ---
-### Criteria on choosing a company #1
+### "Data Science" means different things to different companies!
 
-Advice from [Stitch Fix Blog](http://multithreaded.stitchfix.com/blog/2015/03/31/advice-for-data-scientists/):
-
-1. Work for a company that leverages data science for its strategic differentiation:
-
-   Company's core competency depends on its data and analytic capabilities; data science is more than a "supporting role".
-
-2. Work for a company with great data:
-
-   There is a difference between "data" and "aspirations of data". Ideally you'll find a company that already has enough data to do interesting things.
-
-3. Work for a company with green field opportunities:
-
-   Look for those companies that have a strong direction and strongly established data science teams, but have an array of problems they are solving for the first time.
+* It's important to know your strength and interests
+* Understand what the company is looking for, and whether it's a good match for you
 
 ---
-### Criteria on choosing a company #2
+### A "data scientist" by any other name
 
-On a more personal level, my criteria are fairly simple:
+* Analyst job families: business / product / data analysts ...
+* ML / Science job families: ML research scientists, ML engineers ...
+* Engineering job families: data engineer, ML engineer ...
 
-1. I want to care about what the company is doing.
-2. I want to optimize for my own learning opportunities in hands-on data science.
+---
+### Analyst Job Family
 
-Other considerations: boss/teammates, compensation, work-life balance...
+* Example tool sets: SQL, Excel, Tableau, Jupyter Notebook ...
+* Example deliverables: business insight, product insight, business metrics monitoring, strategic product recommendations ...
 
-Caveat: "Don't judge a book by its cover".
+---
+### Data Science / ML Job Family
 
-Be open-minded and throw away preconceived-notion about what you think a company does, or does not, do.
+* Example tool sets: python, R, sklearn, xgboost, tensorflow, pytorch ...
+* Example deliverables: development of machine learning models that drive / improve business metrics; deployment to customer facing production systems
 
-**Action**: think long and hard about what your own set of criteria is.
+---
+### Engineering Job Family
+
+* Example tool sets: devops, data pipelines, spark, hadoop, relational databases...
+* Example deliverables: robust data pipelines and infrastructure to support data flow and ML-based decision making
+
+---
+<section id="data-science-job-market">
+<h2>Data Science Job Market</h2>
+</section>
+
+---
+### Glut of new data scientists
+
+* The media hype cycle around data science has enormously exploded the amount of junior talent available on the market over the past five years
+  * MOOCs (Coursera, Udacity, Fast.ai...)
+  * Bootcamps (Metis, General Assembly...)
+  * DS-focused undergraduate and master degrees
+  * Advanced degree holders looking for career transitions
+
+---
+### Self reflection
+
+* Don't apply to every type of data science job you find!
+* Think about where you want to specialize
+
+---
+### Your first data science job may not be called data scientist
+
+* Don't aim for perfection the first time! Get your feet in the door first
+* It's normal to transition roles, projects, and companies throughout your career
+* Optimize for learning and developing new skills in your first jobs
+
+---
+### Shotgun vs Sniper Job Search Approaches
+
+<img class="r-stretch" src="https://user-images.githubusercontent.com/7269845/86504444-65d5d000-bd86-11ea-83de-b5e559d5ea76.jpg"></img>
+
+* Shotgun: scouring job boards for openings, applying for tens to hundreds of job postings online
+* Sniper: more methodical and targeted job search
+  * Identify sectors and/or companies that you're interested in
+  * Conduct targeted information interviews
+
+---
+### Criteria on choosing a company
+
+<p style="text-align:left;">Advice from [Stitch Fix Blog](http://multithreaded.stitchfix.com/blog/2015/03/31/advice-for-data-scientists/)</p>
+
+1. Work for a company that leverages data science for its strategic differentiation: Company's core competency depends on its data and analytic capabilities; data science is more than a "supporting role".
+
+2. Work for a company with great data: There is a difference between "data" and "aspirations of data". Ideally you'll find a company that already has enough data to do interesting things.
+
+3. Work for a company with green field opportunities: Look for those companies that have a strong direction and strongly established data science teams, but have an array of problems they are solving for the first time.
 
 ---
 ### But how do you find out?
 
-Good recruiters and hiring managers have vested interest in presenting their best face forward.
+<p style="text-align:left;">Good recruiters and hiring managers have vested interest in presenting their best face forward.</p>
 
-<div style='text-align: center;'>
-    <img height='450' src='./assets/img/JediMindTrick.jpg' />
-</div>
+<img class="r-stretch" src="https://user-images.githubusercontent.com/7269845/104684570-2d586c80-56ae-11eb-9c42-1b47192c0f9b.jpg"></img>
 
 ---
 ### But how do you find out?
 
 Ask people who may have more information. "Trust, but verify."
 
-<div style='text-align: center;'>
-    <img height='450' src='./assets/img/DarthVader.jpg' />
-</div>
+<img class="r-stretch" src="https://user-images.githubusercontent.com/7269845/104684582-35b0a780-56ae-11eb-9eda-c7dd2acd9d4d.jpg"></img>
 
 ---
 ### Importance of Network and Connections
 
-Connections in your professional network can help you by:
+<p style="text-align:left;">Connections in your professional network can help you by:</p>
 
-* Give you a heads-up on hiring situations (current or future): "Our executive team is actively raising money now and had good progress; we will get more headcounts next quarter"
-
-* Give you, within reason, an insider-view on a company that you can't discover on the internet.
-  * Good: "Yeah, our company is in data science consulting, but most of our clients are in the same city, so the travel is not that bad."
-  * Bad: "Yeah, I heard Evil Corp's data engineer recently left, so their data scientist probably have to do both DS and DE's job."
-  * Worse: "Yeah, the company's engineering staff is undergoing exodus. All the job postings on website are from 6 months ago."
-
-* Give you, within reason, suggestions on interview prep.
-
-* Help you evaluate job opportunities and offers
+* Heads-up on hiring situations (current or future)
+* Insider-view on a company that may not be public info. For example:
+  * "Company is expanding rapidly, lots of promotion opportunities"
+  * "Eng team is under-staffed, so DS has to put on DE hats too"
+  * "End of runway, funding in peril, layoff imminent"
+* Suggestions on interview steps and prep
+* Help with evaluation of job opportunities and offers
 
 ---
-### Useful websites: LinkedIn (Professional Network)
+### LinkedIn (Professional Social Network)
 
-* Immediate connections:
-  * Your current and former colleagues / classmates
-  * Your friends
-
-* Extended connections:
-  * 2nd degree connections on LinkedIn
-
-* Example use: (I found two of my industry jobs this way!)
-  * Look for 2nd degree connections in a company you are interested in
+* Immediate connections: your current and former colleagues / classmates, your friends...
+* 2nd degree connections on LinkedIn
+* Example use: (I found 3 of my 4 industry jobs this way!)
+  * Look for 2nd degree connections in company of interest
   * Asking mutual connection for an introduction, then go for informational interviews and (perhaps) job referrals
 
-**Action**: join LinkedIn, build up your network, and establish a presence.
+<img class="r-stretch" src="https://user-images.githubusercontent.com/7269845/104689872-33534b00-56b8-11eb-9cd6-b16425e6fff0.png" height="250px"></img>
 
 ---
-### Useful websites: Indeed (Job Posting Aggregator)
+### Indeed (Job Posting Aggregator)
 
-**Example Use**:
-* You can set up the job alerts so that it will be delivered daily to your email. I set up alerts for "Data Scientist" jobs in San Francisco bay area, that would be a pretty wide net in itself.
-* You can also set up company specific alerts such as: “Company:(Capital One) (Data Scientist OR Data Engineer) jobs”
-
-**Action**: set up job alerts for targeted geographies and/or companies
+* You can set up the job alerts so that it will be delivered daily to your email.
+* Reginal search: "Data Scientist" jobs in San Francisco bay area
+* Company specific search: "Company:(Capital One) (Data Scientist OR Data Engineer) jobs"
 
 ---
-### Useful websites - Glassdoor (Employer Reviews)
+### Glassdoor (Employer Reviews)
 
 * Glassdoor let employees and interviewees publish anonymous reviews or interview experiences of the employers.
-* I use this website when I am doing research on the company that I am interested in, often before the information and on-site interviews.
+* I use this website when I am doing research on the company that I am interested in, often before the informational and on-site interviews.
+* More likely to have data for big employers
+
+<img class="r-stretch" src="https://user-images.githubusercontent.com/7269845/104689867-31898780-56b8-11eb-8bd8-0ac2792d974e.png" height="300px"></img>
 
 ---
-### Useful websites - Crunchbase (Startup Funding DB)
+### Blind (Anonymous Professional Network)
 
-* Crunchbase has a fairly comprehensive list of start-ups fund-raising.
-* Judging from last funding and employee size, you can gauge the length of the runway.
+* More likely to have data for big employers in tech, finance, etc
+* Less curated, but more timely, information
+* Anonymous reviews
+
+<img class="r-stretch" src="https://user-images.githubusercontent.com/7269845/104689874-33ebe180-56b8-11eb-8f2e-df898789f303.png" height="350px"></img>
+
+---
+### Crunchbase (Startup Funding DB)
+
+* Fairly comprehensive list of start-ups fund-raising.
+* Judging from last funding and number employees, you can gauge the length of runway
 * Useful for start ups; not necessarily so for public companies (you can often find more publicly-available information)
 
-<div style='text-align: center;'>
-    <img height='250' src='./assets/img/crunchBaseUber.png' />
-</div>
+<img class="r-stretch" src="https://user-images.githubusercontent.com/7269845/104689863-2f272d80-56b8-11eb-94e3-dc30ff99138e.png" height="300px"></img>
 
 ---
 <section id="interview-prep">
@@ -190,20 +227,7 @@ Connections in your professional network can help you by:
 * Domain Knowledge (aka. Subject Matter Expertise)
 * Business Acumen and Communication
 
-**Action:** Know your skill profile, your interest, and know what the company is looking for during earlier rounds of interviews. If you found yourself lacking on aspects that the company absolutely need, it's not a good fit.
-
----
-### Data Scientist - Skills Required
-
-Do you excel at all aspects? Congratulations! You are a mythical creature!
-
-<div style='text-align: center;'>
-    <img height='350' src='./assets/img/RaptorOnShark.jpg' />
-</div>
-
-Reality:
-
-You don't need a single individual to do all the jobs, but you need to build a team that hopefully will cover all aspects.
+<p style="text-align:left;">**Action:** Know your skill profile, your interest, and know what the company is looking for during earlier rounds of interviews. If you found yourself lacking on aspects that the company absolutely need, it's not a good fit.</p>
 
 ---
 ### Types of Interviews
@@ -217,64 +241,66 @@ You don't need a single individual to do all the jobs, but you need to build a t
 ---
 ### Coding Challenge
 
-You are expected to solve some computation or data manipulation problem, using a language of your choice. Ideally, your solution not only have to be correct, but also have to scale well. If you can solve a problem in $O(n)$ time, don’t solve it in $O(n^2)$.
+<p style="text-align:left;">You are expected to solve some computation or data manipulation problem, using a language of your choice. Ideally, your solution not only have to be correct, but also have to scale well. If you can solve a problem in `O(n)` time, don't solve it in `O(n^2)`</p>
 
-**Action:** play with [HackerRank](http://www.hackerrank.com) or [leetcode](http://www.leetcode.com). But don't go overboard! Data Scientist's algorithm interview is often not as hard-core as that of a software engineer. (but YMMV - your mileage might vary)
+**Action:** play with [HackerRank](https://www.hackerrank.com) or [leetcode](https://www.leetcode.com). But don't go overboard! Data Scientist's algorithm interview is often not as hard-core as that of a software engineer. (YMMV)
 
 ---
 ### Data Analysis Challenge
 
-* Test your skills on data manipulation, cleaning, and predictive modeling. The questions often contain both descriptive and predictive components.
-  * Descriptive: What is the average amount of time a bike spends at a station?
-  * Predictive: predict # of bikes arriving at each station during a specific time span.
+<p style="text-align:left;">Provide you a dataset and test your skills on data manipulation, cleaning, feature engineering, and predictive modeling. The questions often contain both descriptive and predictive components.</p>
 
-* Things to know:
-  * You often can stick with simpler models (eg. linear or logistic regression), but be prepared to rationalize the choices you made on model selection.
-  * Your goal was not only on the data munging and modeling, but also provide a written document to explain, in laymen’s terms, what you have found. - Data scientists often have to communicate the results with other non-technical audiences.
-  * You must be able to analyze data with code (eg. R/Rmarkdown, python / ipython notebook).
+* Descriptive: What is the average amount of time a bike spends at a station?
+* Predictive: predict # of bikes arriving at each station during a specific time span.
 
-**Action:** Play with [kaggle Titanic challenge](https://www.kaggle.com/c/titanic) to understand the type of questions that may be asked in a data analysis challenge.
+---
+### Data Analysis Challenge - What I Look For
+
+* Data wrangling: how well do you deal with messy data in the real world? Are you familiar with latest tools and best practices?
+* ML: Do you _actually_ know how the model works (vs. just know how to call `scikit-learn` API)? Can you defend your choices in model selection and hyperparameter tuning? Do you choose the correct performance metrics?
+* Code quality: do you write well structured and documented code? Following code quality best practices? Do you have unit tests?
+* Communication: are you able to describe clearly and succinctly the results of your analysis?
 
 ---
 ### Technical Interview (Phone or On-site)
 
-* The questions ranges widely depending on the interviewer, the company, and the position you are applying to. Understand your audience and get an idea of what they are looking for.
+* The questions ranges widely depending on the interviewer, the company, and the position you are applying to
+  * Data engineering
+  * SQL queries & performance tuning
+  * System and database / schema design
+  * Algorithm questions
+  * Code debugging, profiling, unit testing...
+* Understand your audience and get an idea of what they are looking for
 
-* No matter what the questions are asked, it is important to make the interview "interactive". You are talking with a live human being, so most of the time, you not only have to solve the problems correctly, but also have to "think out loud" so that the interviewer can follow your line of thought. This is the conversational version of "show your work".
-
-**Action:** conduct mock-up interviews with your friends and colleagues. Know your audience and understand what the company is looking for; but also accept the fact that you probably won't expect any of the questions.
+* Important to make the interview "interactive" by "thinking out loud!"
 
 ---
 ### Business Case Interviews
 
-* Only some companies have this. You should only prepare for it if you are pretty certain that this will be included in the interview.
-
-* The questions ranges from more number-specific (break-even analysis: given the following assumptions on fixed and variable costs, how many units of product do you need to sell to break even?) to more open ended questions that involved a lot of back‐and-forth discussions with the interviewers (example: imagine that you have access to half of the US credit card transaction data. How do you use this data to consult your client, a big cafe chain, on which city in US to open their new branches?)
-
-Action: checkout [case interview tutorials](http://www.capitalone.com/careers/analyst/assessment/) available on line, which gives you a flavor of the questions that may be involved.
+* Only minority of companies have this - don't spend time on this unless you're pretty sure it'll be on the agenda
+* The questions ranges from linear-algebra-like (e.g. break-even analysis) to open-ended, data and business strategic questions
+* Very company and job family specific
 
 ---
 ### Behavioral Interview:
 
-* The behavioral questions are asked to figure out if you work will with others, how you handle conflicts, etc. Employers wants to know you behaved in the past in order to predict your future with them.
-
-* When you answer this kind of question, it is important to think of examples that back up your answer. Saying "I work well with others"" is one thing; saying "in my last project I worked with three different research groups to bring the project to completion" is much better.
-
-* One popular approach to is to use the STAR (Situation / Task / Action / Result) format. There are a wide array of internet resources available on this topic.
-
-**Action:** google "behavioral interview" and understand the STAR format. Think about your past experiences and come up with answers for some popular questions (teamwork, conflict resolution, biggest strengths and weaknesses, etc.)
+* The behavioral questions are asked to figure out if you work will with others, how you handle conflicts, etc
+* Employers wants to know you behaved in the past in order to predict your future with them
+* Make sure to back up your answers with examples! (If you can tell a convincing story, even better)
+* One popular approach to is to use the STAR (Situation / Task / Action / Result) format
+  * Situation: context of your story
+  * Task: what was required of you
+  * Activity: what you actually did
+  * Result: how well the situation played out
 
 ---
 ### Your question for them:
 
-* A job interview is a two-way process in which two parties (you and your potential employer) decide if they want to "go steady". Once you take their job offer you may spend months to years with them, so this is not a decision to be taken lightly.
-
-* Make sure you have done some research on the company (and the interviewers if you have time) before your on‐site interview, so that the Q&A time can be spent on things that aren't public knowledge.
-
+* A job interview is a two-way process in which two parties (you and your potential employer) decide if they want to "go steady".
+* Make sure you have done some research on the company (and the interviewers) before your on-site interview, so that the Q&A time can be spent on things that aren't public knowledge.
 * Well-thought and well-prepared questions for them will:
   * shows them that you are genuinely interested in the job and the company (and have done your homework before the interview)
   * provide you the best chance to collect information to make an informed decision.
-
 * Having no questions at all does NOT show well - you will be passed as not-prepared, not-interested, or both.
 
 ---
@@ -288,7 +314,7 @@ Example questions:
 4. What does a successful first‐year look like for new hire in this position?
 5. How did you start in this company / why did you decide to work here?
 6. Things that you like the most and the least about working at this company?
-7. When can I expect to hear from you after this interview? – ask either the hiring manager or the HR this question to have a better sense about the timeline they make hiring decisions.
+7. When can I expect to hear from you after this interview?
 
 ---
 <section id="offer-negotiation">
@@ -309,7 +335,7 @@ Older version in electronic format can be found online.
 ---
 ### Salary Negotiation
 
-Salary making rule:
+<p style="text-align:left;">Salary making rule</p>
 
 1. Postpone salary talk until there's an offer
 2. Don't do salary negotiation over the email - phone or in-person preferred
@@ -318,9 +344,18 @@ Salary making rule:
    * Satisfactory
    * No-go
 
-Read the Chapman book for details!
+<p style="text-align:left;">Read the Chapman book for details!</p>
 
 ---
 ### Questions?
 
-Slide is available at: http://ikding.github.io/data_sci_job_search/
+Slide is available at: https://ikding.github.io/data_sci_job_search/
+
+---
+### Appendix
+
+**Action**: join LinkedIn, build up your network, and establish a presence.
+**Action**: set up job alerts for targeted geographies and/or companies
+**Action:** conduct mock-up interviews with your friends and colleagues. Know your audience and understand what the company is looking for; but also accept the fact that you probably won't expect any of the questions.
+Action: checkout [case interview tutorials](http://www.capitalone.com/careers/analyst/assessment/) available on line, which gives you a flavor of the questions that may be involved.
+**Action:** google "behavioral interview" and understand the STAR format. Think about your past experiences and come up with answers for some popular questions (teamwork, conflict resolution, biggest strengths and weaknesses, etc.)
