@@ -8,9 +8,7 @@
     <h3 style="color:white;"; >
     Jan 2021
     </h3>
-    <!-- <h5 style="color:white; text-align:right;"; > -->
     https://ikding.github.io/data_sci_job_search/
-    <!-- </h5> -->
 
 </section>
 
@@ -63,23 +61,86 @@
 ---
 ### Type A (Analysis)
 
+<style>
+.container{
+    display: flex;
+}
+.col{
+    flex: 1;
+}
+</style>
+
+<div class="container">
+
+<div class="col">
+
 * Concerned with making sense of data through rigorous analysis and statistics
-* Can code well enough to work with data but is not necessarily an expert in data systems
+* Can code well enough to work with data but is not necessarily an expert in software engineering
 * Deliverable: Business or product-level insights, metrics monitoring, strategic product recommendations, etc
 * Tool box: Python / R, SQL, Jupyter Notebook, dashboards, spreadsheets / slide decks
 * Names: DS, Decision Scientist, Statistician, Business analyst, Product analyst, Data analyst...
 
+<!-- .element: style="width: 100%;" -->
+
+</div>
+
+<div class="col">
+
+![c3po](https://user-images.githubusercontent.com/7269845/104830638-5a835700-5835-11eb-8a8d-ef401770780d.jpg)
+
+</div>
+
+</div>
+
 ---
 ### Type B (Build)
+
+<style>
+.container{
+    display: flex;
+}
+.col{
+    flex: 1;
+}
+</style>
+
+<div class="container">
+
+<div class="col">
 
 * Concerned with building and delivering reusable data products in production, and support real-time customer facing decisions
 * Very strong coders and may be trained software engineers
 * Deliverable: Business-impacting models (recommendation engines, ads targeting, churn models, supply chain routing, fraud & anti-abuse models, etc)
-* Tool box: Python / Scala / Java, ML library (sklearn, xgboost, tensorflow), Database, Cloud computing, Big data pipelines
+* Tool box: Python / Scala / Java, ML library (sklearn, xgboost, pytorch, tensorflow), Database, Cloud computing, Big data pipelines
 * Names: DS, ML Engineer, ML Scientist, Applied (Research) Scientist...
+
+<!-- .element: style="width: 100%;" -->
+
+</div>
+
+<div class="col">
+
+![r2d2](https://user-images.githubusercontent.com/7269845/104827710-b4742480-5815-11eb-832b-a521fe7cf0c8.jpg)
+
+</div>
+
+</div>
 
 ---
 ### Glut of new data scientists
+
+<style>
+.container{
+    display: flex;
+}
+.col{
+    flex: 1;
+}
+</style>
+
+<div class="container">
+
+<div class="col">
 
 <p style="text-align:left;">The media hype cycle around data science has enormously exploded the amount of junior talent available on the market over the past five years</p>
 
@@ -88,12 +149,49 @@
 * DS-focused undergraduate and master degrees
 * Advanced degree holders looking for career transitions
 
+<!-- .element: style="width: 100%;" -->
+
+</div>
+
+<div class="col">
+
+![data-cal](https://user-images.githubusercontent.com/7269845/104827766-56940c80-5816-11eb-86b7-153815f715aa.png)
+
+</div>
+
+</div>
+
 ---
 ### Your first DS job may not be called "data scientist"
+
+<style>
+.container{
+    display: flex;
+}
+.col{
+    flex: 1;
+}
+</style>
+
+<div class="container">
+
+<div class="col">
 
 * Don't aim for perfection the first time! Get your feet in the door first
 * It's normal to transition roles, projects, and companies throughout your career
 * Optimize for learning and developing new skills in your first jobs
+
+<!-- .element: style="width: 100%;" -->
+
+</div>
+
+<div class="col">
+
+![life-path](https://user-images.githubusercontent.com/7269845/104827890-dec6e180-5817-11eb-8450-8b4769fea2f5.png)
+
+</div>
+
+</div>
 
 ---
 ### Call to Action
@@ -230,6 +328,19 @@ Ask people who may have more information. "Trust, but verify."
 ---
 ### Data Scientist - Skills Required
 
+<style>
+.container{
+    display: flex;
+}
+.col{
+    flex: 1;
+}
+</style>
+
+<div class="container">
+
+<div class="col">
+
 * Stats / Probability
 * Modeling / Machine Learning
 * Data Visualization / Web Dev
@@ -239,6 +350,18 @@ Ask people who may have more information. "Trust, but verify."
 * Business Acumen and Communication
 
 <p style="text-align:left;">Call to action: Know your skill profile, your interest, and know what the company is looking for during earlier rounds of interviews.</p>
+
+<!-- .element: style="width: 100%;" -->
+
+</div>
+
+<div class="col">
+
+![that-is-a-lot](https://media.giphy.com/media/RfkkfkWXq8laiWatVI/giphy.gif)
+
+</div>
+
+</div>
 
 ---
 ### Stages of Interviews
@@ -252,9 +375,34 @@ Ask people who may have more information. "Trust, but verify."
 ---
 ### Coding Challenge
 
+<style>
+.container{
+    display: flex;
+}
+.col{
+    flex: 1;
+}
+</style>
+
+<div class="container">
+
+<div class="col">
+
 You are expected to solve some computation or data manipulation problem, using a language of your choice. Ideally, your solution not only have to be correct, but also have to scale well. If you can solve a problem in `O(n)` time, don't solve it in `O(n^2)`.
 
-<p style="text-align:left;">Call to action: Play with [HackerRank](https://www.hackerrank.com) or [leetcode](https://www.leetcode.com). But don't go overboard! Data scientist's algorithm interview is often not as hard-core as that of a software engineer. (YMMV)</p>
+Call to action: Play with [HackerRank](https://www.hackerrank.com) or [leetcode](https://www.leetcode.com). But don't go overboard! Data scientist's algorithm interview is often not as hard-core as that of a software engineer. (YMMV)
+
+<!-- .element: style="width: 100%;" -->
+
+</div>
+
+<div class="col">
+
+![ineffective-sorts](https://imgs.xkcd.com/comics/ineffective_sorts.png)
+
+</div>
+
+</div>
 
 ---
 ### Data Analysis Challenge
@@ -264,15 +412,17 @@ You are expected to solve some computation or data manipulation problem, using a
 * Descriptive: What is the average amount of time a bike spends at a station?
 * Predictive: predict # of bikes arriving at each station during a specific time span.
 
-<p style="text-align:left;">Call to action: read others' analyses of commonly used data science datasets, e.g. [New York Taxi ride](https://www.kaggle.com/c/nyc-taxi-trip-duration), [Crimes in Chicago](https://www.kaggle.com/currie32/crimes-in-chicago), [Credit Card Fraud Detection](https://www.kaggle.com/mlg-ulb/creditcardfraud), etc</p>
+<p style="text-align:left;">Call to action:</p>
+
+* Read others' analyses of commonly used data science datasets, e.g. [New York Taxi ride](https://www.kaggle.com/c/nyc-taxi-trip-duration), [Crimes in Chicago](https://www.kaggle.com/currie32/crimes-in-chicago), [Credit Card Fraud Detection](https://www.kaggle.com/mlg-ulb/creditcardfraud), etc
 
 ---
 ### Data Analysis Challenge - What I Look For
 
-* Data wrangling: how well do you deal with messy data in the real world? Are you familiar with latest tools and best practices?
-* ML: Do you _actually_ know how the model works (vs. just know how to call `scikit-learn` API)? Can you defend your choices in model selection and hyperparameter tuning? Do you know the correct performance metrics?
-* Code quality: do you write well structured and documented code? Following [code quality](https://ikding.github.io/python_code_quality_for_ds/) best practices? Do you have unit tests?
-* Communication: are you able to describe clearly and succinctly the results of your analysis?
+* **Data wrangling**: how well do you deal with messy data in the real world? Are you familiar with latest tools and best practices?
+* **ML**: Do you _actually_ know how the model works (vs. just know how to call `scikit-learn` API)? Can you defend your choices in model selection and hyperparameter tuning? Do you know the correct performance metrics?
+* **Code quality**: do you write well structured and documented code? Following [code quality](https://ikding.github.io/python_code_quality_for_ds/) best practices? Do you have unit tests?
+* **Communication**: are you able to describe clearly and succinctly the results of your analysis?
 
 ---
 ### Technical Interview (multiple flavors)
@@ -281,12 +431,10 @@ You are expected to solve some computation or data manipulation problem, using a
   * Data engineering
   * SQL queries & performance tuning
   * System and database / schema design
-  * Algorithm questions
-  * Code debugging, profiling, unit testing...
+  * Algorithm & data structure
+  * Code debugging, profiling, unit testing
 * Understand your audience and get an idea of what they are looking for
 * Important to make the interview "interactive" by "thinking out loud!"
-
-**Call to Action:** `¯\_(ツ)_/¯`
 
 ---
 ### Behavioral Interview:
@@ -322,9 +470,7 @@ You are expected to solve some computation or data manipulation problem, using a
 * Having no questions at all does NOT show well - you will be passed as not-prepared, not-interested, or both.
 
 ---
-### Your question for them:
-
-Example questions:
+### Your question for them (examples)
 
 1. What would be my main responsibility if I am hired? What are some of the example projects I may be working on?
 2. What is your day to day like?
@@ -366,6 +512,20 @@ Older version in electronic format can be found online.
    * No-go: the lowest acceptable number
 
 <p style="text-align:left;">Read the Chapman book for details!</p>
+
+---
+### Many parts of the offer
+
+* Tangibles
+  * Base salary & bonus
+  * Stock compensations (options or restricted stock units)
+  * Responsibilities and job titles
+  * Vacation / sick hours
+* Intangibles
+  * Company mission & growth trajectory
+  * Team, managers
+  * Personal growth & career development opportunities
+* Companies may be more willing to negotiate on some aspects than others
 
 ---
 ### Questions?
