@@ -1,14 +1,15 @@
-<section class="banner base" date-background="image/title_background.jpg">
-    <h1 style="color:white;"; >
-    Data Scientist Job Search (in USA)
-    </h1>
-    <h3 style="color:white;"; >
-    I-Kang Ding
-    </h3>
-    <h3 style="color:white;"; >
-    Jan 2021
-    </h3>
-    https://ikding.github.io/data_sci_job_search/
+<section data-background-image="https://www.palaiszelda.com/cado/fds-ecran/botw_8_1280.jpg">
+
+  <h1 style="color:white;"; >
+  Data Scientist Job Search (in USA)
+  </h1>
+  <h3 style="color:white;"; >
+  I-Kang Ding
+  </h3>
+  <h4 style="color:white;"; >
+  Jan 2021
+  </h4>
+  https://ikding.github.io/data_sci_job_search/
 
 </section>
 
@@ -35,13 +36,16 @@ Note: There is a lot to cover, so I won't be able to go deep. I am including ref
   * Data Science Manager at Capital One (financial services, 50,000-ppl)
   * Sr. Data Scientist at KoBold Metals (mineral exploration / climate tech startup, 25-ppl)
 
+[LinkedIn](https://linkedin.com/in/ikding) | [Website](https://ikding.github.io) | [Twitter](https://twitter.com/ikding)
+
 Note:
 
 * I have participated in interview activities and mentored many DS who have been looking for DS jobs. In this talk I want to talk about what I've observed and learned from that experience.
 * It is but one data point and one view point.
 
 ---
-<section id="data-science-job-families">
+<section id="data-science-job-families" data-background-image="https://www.palaiszelda.com/cado/fds-ecran/fan_derSiebteSchatten_6_1280.jpg">
+
 <h2>Data Science Job Families</h2>
 </section>
 
@@ -174,6 +178,10 @@ Note:
 
 </div>
 
+Note:
+
+Number of junior DS candidates per job opening changes from 10-20 from a few years back, to easily 40-50 now.
+
 ---
 ### Your first DS job may not be called "data scientist"
 
@@ -228,7 +236,7 @@ Note:
 Note: many dimensions to the career goal. Type A vs Type B, management track vs IC track, etc. Think critically about what you can convincingly sell to employers
 
 ---
-<section id="choosing-a-company">
+<section id="choosing-a-company" data-background-image="https://static3.srcdn.com/wordpress/wp-content/uploads/2020/10/The-Legend-of-Zelda-Breath-of-the-Wild-Divine-Beasts.jpg">
 <h2>Choosing a Company</h2>
 </section>
 
@@ -348,7 +356,7 @@ Note: in next slide, I'll take about some websites / resources. It can be split 
 * Play with other aforementioned websites to understand what information are available
 
 ---
-<section id="interview-prep">
+<section id="interview-prep" data-background-image="https://cdn.themis-media.com/media/global/images/library/deriv/1416/1416668.jpg">
 <h2>Types of Interviews and Preparation</h2>
 </section>
 
@@ -390,8 +398,10 @@ Note: in next slide, I'll take about some websites / resources. It can be split 
 
 </div>
 
+Note: if you really are an expert at all of these things, you are the legendary DS unicorn! But most of us are not.
+
 ---
-### Stages of Interviews
+### Types of Interviews
 
 * Algorithm Interview
 * Data Modeling / Coding Interview
@@ -440,7 +450,8 @@ You are expected to solve some computation or data manipulation problem, using a
 ---
 ### Data Modeling / Coding Interview
 
-* Provide you a dataset and test your skills on data manipulation, cleaning, feature engineering, and predictive modeling. The questions often contain both descriptive and predictive components. (Example data: bike-sharing dataset)
+* Provide you a dataset and test your skills on data manipulation, cleaning, feature engineering, and predictive modeling
+* The questions often contain both descriptive and predictive components (Example data: bike-sharing dataset)
   * Descriptive: What is the average amount of time a bike spends at a station?
   * Predictive: predict # of bikes arriving at each station during a specific time span.
 * Time duration: a few hours to over the weekend
@@ -458,13 +469,19 @@ You are expected to solve some computation or data manipulation problem, using a
 * **Code quality**: Do you write well structured and documented code? Following [code quality](https://ikding.github.io/python_code_quality_for_ds/) best practices? Do you have unit tests?
 * **Communication**: Are you able to describe clearly and succinctly the results of your analysis?
 
+Note:
+
+* Don't reinvent the wheel
+* ML example sin: wrong type of the model for the job, overfit without knowing it
+* Code quality sin: no functions, the entire analysis is a 1000-line script
+
 ---
 ### Technical Interview (multiple flavors)
 
 * The questions ranges widely depending on the interviewer, the company, and the position you are applying to
   * Data engineering (e.g. explain how map reduce work; tradeoffs on parallelization frameworks)
   * SQL queries & performance tuning (e.g. given these tables, write a query that gives you the data you want)
-  * System and database / schema design (e.g. given the type of data and refresh frequency, and the analysis others want to do, design a set of table and schema that allow efficient read and/or write)
+  * System and database / schema design (e.g. design table schema for efficient input or output, tradeoff between SQL vs NoSQL)
   * Algorithm & data structure
   * Code debugging, profiling, unit testing (e.g. This function is buggy and slow. Make it run faster, and write unit tests for it to make it less buggy)
 * Understand your audience and get an idea of what they are looking for
@@ -475,20 +492,44 @@ Note: There is a lot of things that a DS interview may ask. If you don't know wh
 ---
 ### Behavioral Interview:
 
+<style>
+.container{
+    display: flex;
+}
+.col{
+    flex: 1;
+}
+</style>
+
+<div class="container">
+
+<div class="col">
+
 * The behavioral questions are asked to figure out if you work will with others, how you handle conflicts, etc
-* Make sure to back up your answers with examples! (If you can tell a convincing story, even better)
+* Make sure to back up your answers with examples!
 * One popular approach to is to use the STAR (Situation / Task / Action / Result) format
-  * Situation: context of your story
-  * Task: what was required of you
-  * Activity: what you actually did
-  * Result: how well the situation played out
 
 <p style="text-align:left;">Call to action:</p>
 
-* Behavioral interview prep references: [1](https://www.indeed.com/career-advice/interviewing/how-to-prepare-for-a-behavioral-interview), [2](https://www.glassdoor.com/blog/guide/how-to-prepare-for-a-behavioral-interview/), [3](https://hr.berkeley.edu/sites/default/files/attachments/behavioral-interview-tips-examples.pdf)
-* Think about your past experiences and come up with answers for some popular questions (teamwork, conflict resolution, biggest strengths and weaknesses, etc.)
+* Behavioral interview prep: [1](https://www.indeed.com/career-advice/interviewing/how-to-prepare-for-a-behavioral-interview), [2](https://www.glassdoor.com/blog/guide/how-to-prepare-for-a-behavioral-interview/), [3](https://hr.berkeley.edu/sites/default/files/attachments/behavioral-interview-tips-examples.pdf)
+* Think about your past experiences and come up with answers for some popular questions
+
+</div>
+
+<div class="col">
+
+![great-with-people](https://thumbs.gfycat.com/MintyAmpleGodwit-size_restricted.gif)
+
+</div>
+
+</div>
 
 Note: Behavioral interview has lot of resources b/c it is used in a wide range of jobs. Company wants to understand your past experience to make prediction about the future behavior. You must give examples.
+
+* Situation: context of your story
+* Task: what was required of you
+* Activity: what you actually did
+* Result: how well the situation played out
 
 ---
 ### Business Case Interviews
@@ -527,10 +568,13 @@ Note: Behavioral interview has lot of resources b/c it is used in a wide range o
 * Make sure you have done some research on the company (and the interviewers) before your on-site interview
 * Well-thought and well-prepared questions for them will:
   * shows them that you are genuinely interested in the job and the company
-  * provide you the best chance to collect information to make an informed decision.
-* Having no questions at all does NOT show well - you will be passed as not-prepared, not-interested, or both.
+  * provide you the best chance to collect information to make an informed decision
+* Having no questions at all does NOT show well - you will be passed as not-prepared, not-interested, or both
 
-Note: analogy between dating -> long term relationships. You likely will stay at a job for 1 to many years, so it's not a decision to be taken lightly.
+<img class="r-stretch" src="https://user-images.githubusercontent.com/7269845/105449360-1c1edb00-5c2d-11eb-9ba2-bd432bc57d43.jpg" height="250px"></img>
+
+
+Note: analogy between speed dating -> long term relationships. You likely will stay at a job for 1 to many years, so it's not a decision to be taken lightly.
 
 ---
 ### Your question for them (examples)
@@ -538,7 +582,7 @@ Note: analogy between dating -> long term relationships. You likely will stay at
 1. What would be my main responsibility if I am hired? What are some of the example projects I may be working on?
 2. What is your day to day like?
 3. What are the personal attributes that set a successful employee apart from others?
-4. What does a successful first‐year look like for new hire in this position?
+4. What does a successful first-year look like for new hire in this position?
 5. How did you start in this company / why did you decide to work here?
 6. Things that you like the most and the least about working at this company?
 7. When can I expect to hear from you after this interview?
@@ -546,7 +590,7 @@ Note: analogy between dating -> long term relationships. You likely will stay at
 Note: these are just some example questions. You might also come up with a different set of questions toward your future peers or management.
 
 ---
-<section id="offer-negotiation">
+<section id="offer-negotiation" data-background-image="https://pbs.twimg.com/media/Eh1pcfGWkAAnDn_.jpg" data-background-size="500px" data-background-repeat="repeat">
 <h2>Offer Negotiations</h2>
 </section>
 
@@ -554,6 +598,8 @@ Note: these are just some example questions. You might also come up with a diffe
 ### Offer Negotiations
 
 <img class="r-stretch" src="https://user-images.githubusercontent.com/7269845/104799190-f18ed700-5781-11eb-8910-28c2d8e8d422.jpg" height="450px"></img>
+
+Note: Negotiating offer can be stressful, but I really encourage everyone to give it a try. Salary history is often cumulative...
 
 ---
 ### Offer Negotiations
@@ -582,7 +628,7 @@ Older version in electronic format can be found online.
 
 <p style="text-align:left;">Avoid discussing and disclosing salary information until they are actually making you an offer</p>
 
-* Otherwise you may be screed out of perfectly suitable interviews
+* Otherwise you may be screened out of perfectly suitable interviews
 * Otherwise the employer may use this information as a way to make a low-ball offer when the time comes
 * As people's desire for something grows, so does their flexibility about how much they can afford
 
@@ -611,7 +657,7 @@ Older version in electronic format can be found online.
 ### Rule 3: Don't negotiate by email
 
 * Email is 100% verbal; communication has lots of non-verbal components (inflection, pauses, facial expressions)
-* "Yeah, right" - is it "yes, indeed" or "are you serious?"
+  * "Yeah, right" - is it "yes, indeed" or "are you serious?"
 * Crippling the communication by subtracting all non-verbal signals cannot do any good
 * Voice to voice will do; face to face is better
 
@@ -631,6 +677,8 @@ Older version in electronic format can be found online.
   * Team, managers
   * Personal growth & career development opportunities
 * Companies may be more willing to negotiate on some aspects than others
+
+<img src="https://media.giphy.com/media/eChf44Gyj2VrO/giphy.gif" height="200px"></img>
 
 ---
 ### Questions?
